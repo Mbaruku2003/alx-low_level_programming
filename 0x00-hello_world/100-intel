@@ -1,0 +1,2 @@
+gcc -c -S $CFILE 100-intel.c
+
