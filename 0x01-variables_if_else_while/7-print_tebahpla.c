@@ -15,5 +15,5 @@ int main(void)
 			c--;
 		}
 
-			return (0);
+		return (0);
 }
