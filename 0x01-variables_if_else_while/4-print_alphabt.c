@@ -11,7 +11,7 @@ int main(void)
 	{
 		if (a != 'q' && a != 'e')
 		{
-			putchar('a');
+			putchar(a);
 		}
 	}
 	putchar('\n');
