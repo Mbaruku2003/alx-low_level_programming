@@ -18,12 +18,11 @@ int main(void)
 				putchar(b);
 			if (a == 56 && b == 57)
 				continue;
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(',');
+			putchar(' ');
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
