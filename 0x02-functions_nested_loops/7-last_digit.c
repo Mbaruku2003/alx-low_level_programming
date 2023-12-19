@@ -7,8 +7,12 @@
  */
 int print_last_digit(int m)
 {
-	int type = m >= 0 ? 1 : -1;
-	int last_digit = type * (n % 10);
+	int k;
 
-	return (last_digit);
+	k = m % 10;
+	if (m < 0)
+	{
+		k = k * -1;
+	}
+	return (k);
 }
