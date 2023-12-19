@@ -2,14 +2,14 @@
 #include <stdio.h>
 /**
  * print_alphabet_x10 - prints 10 times the alphabet, in lowercase
- * return: Always 0(success)
+ * return: void
  */
 void print_alphabet_x10(void)
 {
 	char a;
 	char b;
 
-	for (a = 48; a<= 57; a++)
+	for (a = 48; a <= 57; a++)
 	{
 		for (b = 97; b <= 122; b++)
 		{
@@ -17,5 +17,4 @@ void print_alphabet_x10(void)
 		}
 	}
 	putchar('\n');
-	return (0);
 }
