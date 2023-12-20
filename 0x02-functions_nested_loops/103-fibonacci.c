@@ -6,27 +6,19 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
-	int e;
+	int a = 1;
+	int b = 2;
+	int c = b;
+	int d = 0;
 
-	for (a = 1; ; a++)
+	while (a + b < 4000000)
 	{
-		for (b = 2; ; b++)
-		{
-		c = a + b;
-		for (d = 1; d < 4000000; d++)
-		{
-			e = c--;
-			d = c + e;
-			if (d % 2 == 0)
-			{
-				printf("%d", d);
-				printf("\n");
-			}
-		}
-		}
+		b = b + a;
+		if (b % 2 == 0)
+			c = c + b;
+		a = c - a;
+		d++;
 	}
+	printf("%d\n", a);
+	return (0);
 }
