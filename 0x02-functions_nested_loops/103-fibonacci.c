@@ -17,16 +17,15 @@ int main(void)
 		for (b = 2; ; b++)
 		{
 		c = a + b;
-	d = c - a;
-e = d + c;
-for (e = 0; e < 4000000; e++)
-{
-	if (e % 2 == 0)
-	{
-		printf("%d", e);
-		printf("\n");
+		for (c = 1; c < 4000000; c++)
+		{
+			 d = c + c--;
+			 if (d % 2 = 0)
+			 {
+				 printf("%d", d);
+				 printf("\n");
+			 }
+		}
+		}
 	}
-}
-}
-}
 }
