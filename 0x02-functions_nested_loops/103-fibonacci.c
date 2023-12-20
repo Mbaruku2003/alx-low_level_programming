@@ -10,7 +10,7 @@ int main(void)
 	int b;
 	int c;
 	int d;
-	int e = 0;
+	int e;
 
 	for (a = 1; ; a++)
 	{
@@ -19,12 +19,13 @@ int main(void)
 		c = a + b;
 		for (c = 1; c < 4000000; c++)
 		{
-			 d = c + c--;
-			 if (d % 2 == 0)
-			 {
-				 printf("%d", d);
-				 printf("\n");
-			 }
+			e = c--;
+			d = c + e;
+			if (d % 2 == 0)
+			{
+				printf("%d", d);
+				printf("\n");
+			}
 		}
 		}
 	}
