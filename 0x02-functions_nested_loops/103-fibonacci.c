@@ -17,7 +17,7 @@ int main(void)
 		for (b = 2; ; b++)
 		{
 		c = a + b;
-		for (c = 1; c < 4000000; c++)
+		for (d = 1; d < 4000000; d++)
 		{
 			e = c--;
 			d = c + e;
