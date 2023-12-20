@@ -19,6 +19,6 @@ int main(void)
 		a = b - a;
 		++d;
 	}
-	printf("%d\n", a);
+	printf("%d\n", c);
 	return (0);
 }
