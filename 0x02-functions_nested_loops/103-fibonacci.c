@@ -20,7 +20,7 @@ int main(void)
 		for (c = 1; c < 4000000; c++)
 		{
 			 d = c + c--;
-			 if (d % 2 = 0)
+			 if (d % 2 == 0)
 			 {
 				 printf("%d", d);
 				 printf("\n");
