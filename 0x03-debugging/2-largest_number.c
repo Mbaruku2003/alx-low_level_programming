@@ -10,9 +10,9 @@ int largest_number(int a, int b, int c)
 {
 	int largest;
 
-	if (((a > b) && (b > c)) || ((a > c) && (c > b)))
+	if ((((a > b) && (b > c)) || ((a > c) && (c > b)) || ((a > c) && (a > b))))
 	{
-	    largest = a;
+	largest = a;
 	}
 	else if (((b > a && a > c)) || ((b > c) && (c > a)))
 	{
