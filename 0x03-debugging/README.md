@@ -1,3 +1,2 @@
-this is a readme for debugging.
-debugging is thechecking and removal of errors in a program.
-
+this is a program om debugging
+debugging is the removal of errors on code
