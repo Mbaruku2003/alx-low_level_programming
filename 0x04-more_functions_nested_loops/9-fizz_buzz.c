@@ -13,21 +13,21 @@ int main(void)
 		if (i % 3 == 0)
 		{
 			printf("%s", "fizz");
-			printf(" ");
 		}
 		else if (i % 5 == 0)
 		{
 			printf("%s", "Buzz");
-			printf(" ");
 		}
 		else if (i % 3 == 0 && i % 5 == 3)
 		{
 			printf("%s", "FizzBuzz");
-			printf(" ");
 		}
 		else
 		{
 			printf("%d", i);
+		}
+		if (i != 100)
+		{
 			printf(" ");
 		}
 	}
