@@ -7,13 +7,9 @@
 int _isupper(int c)
 {
 
-	if (c == 65 && c <= 90 && c++)
+	for (c = 65; c <= 90; c++)
 	{
 		return (1);
-	}
-	else
-	{
-	return (0);
 	}
 	return (0);
 }
