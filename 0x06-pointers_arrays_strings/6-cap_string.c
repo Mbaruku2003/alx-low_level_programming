@@ -4,28 +4,30 @@
  * @n: string being capitalised
  * Return: n
  */
-char *cap_string(char *n)
+char *cap_string(char *str)
 {
-	int i;
+	int x = 0;
 
-	for (i = 0; n[i] != '0' ; i++)
+	while (str[x])
 	{
-		if (n[i] == 32 ||
-			n[i] == '\t' ||
-			n[i] == '\n' ||
-			n[i] == 44 ||
-			n[i] == 59 ||
-			n[i] == 46 ||
-			n[i] == 33 ||
-			n[i] == 63 ||
-			n[i] == ' "' ||
-			n[i] == 40 ||
-			n[i] == 41 ||
-			n[i] == 123 ||
-			n[i] == 125)
-		{
-			n[i] += 33;
-		}
+		while (!(str[x] >= 'a' && str[x] <= 'z'))
+			x++;
+		if (str[x] - 1 == ' ' ||
+				str[x - 1] == '\t' ||
+				str[x - 1] == '\n' ||
+				str[x - 1] == ',' ||
+				str[x - 1] == ';' ||
+				str[x - 1] == '.' ||
+				str[x - 1] == '!' ||
+				str[x - 1] == '?' ||
+				str[x - 1] == '"' ||
+				str[x - 1] == '(' ||
+				str[x - 1] == ')' ||
+				str[x - 1] == '{' ||
+				str[x - 1] == '}' ||
+				x == 0)
+			str[x] -= 32;
+		x++;
 	}
-	return (0);
+	return (str);
 }
