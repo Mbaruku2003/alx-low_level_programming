@@ -2,6 +2,7 @@
 /**
  * _strspn - gets the length of a prefix substrin
  * @s: initial segment which only of bytes from accept
+ * @accept: where n will come from
  * Return: (0);
  */
 unsigned int _strspn(char *s, char *accept)
@@ -13,7 +14,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (j = 0; s[i] != accept[j]; j++)
 		{
-			if (accept[j] == '\0')
+			if (accept[k] == '\0')
 			{
 				return (i);
 			}
