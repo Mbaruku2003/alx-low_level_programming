@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdio.h>
 /**
- * main: Entry point of the program
+ * main - Entry point of the program
  * @argc: counts the number of arguenments
  * @argv: string for the command line arguenment
  * Return: 0(success)
