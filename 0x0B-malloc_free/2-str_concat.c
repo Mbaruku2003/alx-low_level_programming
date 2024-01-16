@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == NULL)
 	{
 		free(ptr);
-		return(NULL);
+		return (NULL);
 	}
 	for (i = 0; i < s1length; i++)
 	{
