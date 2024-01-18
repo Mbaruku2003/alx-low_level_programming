@@ -3,16 +3,17 @@
 #include <stdio.h>
 /**
  * string_nconcat - concactenates twostrings
- * @s1- first string
+ * @s1: first string
  * @s2: where n bytes are taken from
  * @n: the number of bytes being taken if >s2prints2
- * Retirn: POINTER || NULL on failure
+ * Return: POINTER || NULL on failure
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	size_t i, k;
 	size_t j;
 	char *ptr;
+
 	if (s1 == NULL)
 		i = 0;
 	else
