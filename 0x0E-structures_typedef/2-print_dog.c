@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
-/*
+/**
  * print_dog - prints the details f a dog
  * @d: the dog
  * Return : void
