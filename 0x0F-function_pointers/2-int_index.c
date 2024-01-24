@@ -3,10 +3,11 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
- * array_iterator - executes a function given as a parameter on each element
- * size: the number of elements in the arrray
- * cmp: pointer to the function to be used to declare variables
- * array: holds the number of elements
+ * int_index - executes a function given as a parameter on each element
+ * @size: the number of elements in the arrray
+ * @cmp: pointer to the function to be used to declare variables
+ * @array: holds the number of elements
+ * Return: (-1)
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
