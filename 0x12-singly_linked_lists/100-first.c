@@ -1,4 +1,5 @@
 #include "lists.h"
+void first(void)__attribute__((constructor));
 /**
  * new - prints a segment before the main
  * function is executed
