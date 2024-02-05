@@ -13,20 +13,20 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	{
 		return (NULL);
 	}
-	leo = malloc(sizeof(struct listint_s));
+	leo = malloc(sizeof(listint_t) * n);
 	if (leo == NULL)
 	{
 		return (NULL);
 	}
-	if(*head == NULL)
+	if (*head == NULL)
 	{
-		leo->next = NULL
+		leo->next = NULL;
 	}
 	else
 	{
 		leo->next = *head;
-		leo->n = n;
-		*head = leo;
 	}
+	leo->n = n;
+	*head = leo;
 	return (*head);
 }
