@@ -3,6 +3,7 @@
  * add_nodeint_end - adds a new node to the end of a list
  * @head: apointer to a node
  * @n: constant to a space in size
+ * Return: pointer to head
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
