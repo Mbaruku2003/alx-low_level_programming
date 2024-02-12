@@ -2,7 +2,7 @@
 /**
  * append_text_to_file - appends txt to a file
  * @filename: the name of the file
- * @tect_content: the null terminated string
+ * @text_content: the null terminated string
  * Return: 1 on success else -1
  */
 int append_text_to_file(const char *filename, char *text_content)
@@ -30,6 +30,6 @@ int append_text_to_file(const char *filename, char *text_content)
 			return (-1);
 		}
 	}
-	close (fp);
+	close(fp);
 	return (1);
 }
