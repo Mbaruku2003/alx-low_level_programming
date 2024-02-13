@@ -51,17 +51,17 @@ void check_stat(int stat, int fd, char *filename, char mode)
 {
 	if (mode == 'c' && stat == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 	else if (mode == 'O' && stat == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't read from file %s\n", filename);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(98);
 	}
 	else if (mode == 'W' && stat == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't write to %s\n", filename);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 		exit(99);
 	}
 }
