@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
  */
 void check_stat(int stat, int fd, char *filename, char mode)
 {
-	if (mode == 'c' && stat == -1)
+	if (mode == 'C' && stat == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
