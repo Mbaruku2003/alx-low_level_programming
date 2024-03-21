@@ -5,7 +5,7 @@
  * add_dnodeint_end - adds new node at the end
  * @head: pointer to all the elements of the list
  * @n: the valuse of n
- * Return; address of new node
+ * Return: address of new node
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
