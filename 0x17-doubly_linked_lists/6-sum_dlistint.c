@@ -10,6 +10,8 @@ int sum_dlistint(dlistint_t *head)
 {
 	int leo = 0;
 
+	if (head == NULL)
+		return (leo);
 	while (head->prev != NULL)
 	{
 		head = head->prev;
