@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * sum_dlistint - sum of all the data 
+ * sum_dlistint - sum of all the data
  * @head: the pointer to the list
- * Return the sum f all data
+ * Return: the sum f all data
  */
 int sum_dlistint(dlistint_t *head)
 {
