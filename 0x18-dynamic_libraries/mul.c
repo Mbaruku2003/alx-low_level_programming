@@ -8,8 +8,6 @@
  */
 int mul(int a,int b)
 {
-	size_t product;
 
-	product = a * b;
-	return (product);
+	return (a * b);
 }
