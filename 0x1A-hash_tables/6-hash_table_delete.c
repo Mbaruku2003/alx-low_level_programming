@@ -20,7 +20,7 @@ void hash_table_delete(hash_table_t *ht)
 			if (au_free->key)
 				free(au_free->key);
 			if (au_free->value)
-				free(au_free);
+				free(au_free->value);
 			free(au_free);
 		}
 	}
