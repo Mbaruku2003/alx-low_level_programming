@@ -29,6 +29,8 @@ void sorted_list(shash_table_t *ht, shash_node_t *new_node)
 		sbucket = sbucket->snext;
 	}
 	while (sbucket);
+	{
+	}
 	new_node->sprev = ht->stail;
 	new_node->snext = ht->stail->snext;
 	ht->stail->snext = new_node;
