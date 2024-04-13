@@ -1,4 +1,7 @@
 #include "hash_tables.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 /**
  * sorted_list - function for sorting a new node
  * @ht: pointer to a sortd hash table
@@ -27,10 +30,7 @@ void sorted_list(shash_table_t *ht, shash_node_t *new_node)
 			return;
 		}
 		sbucket = sbucket->snext;
-	}
-	while (sbucket);
-	{
-	}
+	} while (sbucket);
 	new_node->sprev = ht->stail;
 	new_node->snext = ht->stail->snext;
 	ht->stail->snext = new_node;
