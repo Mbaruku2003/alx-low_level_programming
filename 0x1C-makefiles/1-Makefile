@@ -4,7 +4,7 @@
 #CC: the compiler to be used
 #SRC: the .c files
 
-CC := gcc
-SRC := $(wildcard *.c)
+CC = gcc
+SRC = main.c School.c
 all: ${SRC}
 	${CC} ${SRC} -o school
