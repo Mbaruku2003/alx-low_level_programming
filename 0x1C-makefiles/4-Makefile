@@ -1,0 +1,17 @@
+#all the 3-Makefile instructions
+#CFLAGS: your favorite compiler flags: -Wall -Werror -Wextra -pedantic
+
+NAME = school
+CC = gcc
+SRC = main.c school.c
+RM = rm -f
+OBJ = ${SRC:%.c=%.o}
+CFLAGS = -Wall -Werror -Wextra -pedantic
+all: ${OBJ}
+	${CC} ${CFLAGS} ${OBJ} -o ${NAME}
+clean:
+	${RM} *~ ${NAME}
+oclean:
+	${RM} ${OBJ}
+fclean: clean oclean
+re: fclean all
