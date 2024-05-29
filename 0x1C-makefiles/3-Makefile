@@ -12,7 +12,11 @@ OBJ = ${SRC:%.c=%.o}
 RM = rm -f
 all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
-clean: ${RM} *.~ ${NAME}
-oclean: ${RM} ${OB}
-fclean: clean oclean
-re: fclean all
+clean:
+	${RM} *.~ ${NAME}
+oclean:
+	${RM} ${OB}
+fclean:
+	clean oclean
+re:
+	fclean all
