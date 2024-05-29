@@ -1,0 +1,25 @@
+# eerythig rule except the folowing
+#You have to use $(RM) for the cleaning up rules
+# you are not allowed to set the RM variable
+# not allowed to use the string $(CC) more than once
+# only allowed to use the string $(RM) twice
+# not allowed to use the string $(CFLAGS)
+# (but the compiler should still use the flags you set in this variable)
+#  not allowed to have an $(OBJ) rule
+
+CC = gcc
+SRC = main.c school.c
+OBJ = ${SRC:%o=%c}
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+.PHONY: all clean oclean fclean re
+all: m.h${OBJ}
+	${CC} ${CFLAGS} ${OBJ} -o ${NAME}
+clean:
+	${RM} *~ ${NAME}
+oclean:
+	${RM} *${OBJ}
+fclean: clean oclean
+re: fclean all
