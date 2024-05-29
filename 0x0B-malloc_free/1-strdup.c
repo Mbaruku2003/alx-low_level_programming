@@ -30,4 +30,4 @@ char *_strdup(char *str)
 		ptr[j] = str[j];
 	}
 	return (ptr);
-}
+ }

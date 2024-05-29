@@ -23,15 +23,17 @@ int main(void)
 					if ((a && b) > (c && d))
 					{
 						putchar(' ');
-						putchar(a + '0');
-						putchar(b + '0');
+						putchar(a);
+						putchar(b);
 						putchar(' ');
-						putchar(c + '0');
-						putchar(d + '0');
-						if (a == 57 && b == 56 && c == 57 && d == 57)
+						putchar(c);
+						putchar(d);
+						if (b == 56)
+						{
 							continue;
 						putchar(',');
 						putchar(' ');
+						}
 					}
 				}
 				}
