@@ -7,7 +7,7 @@
 
 CC = gcc
 NAME = school
-SRC = $(wildcard *.c)
+SRC = school.c main.c
 OBJ = ${SRC:%.c=%.o}
 RM = rm -f
 all: ${OBJ}
