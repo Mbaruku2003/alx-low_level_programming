@@ -5,7 +5,7 @@
 def island_perimeter(grid):
     """Zeo represents a water zone while 1 an zone."""
 
-    height =len(grid)
+    height = len(grid)
     width = len(grid[0])
     size = 0
     edge = 0
